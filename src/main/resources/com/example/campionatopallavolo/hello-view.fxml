@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.campionatopallavolo.CampionatoController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Gestione Campionato di Pallavolo" style="-fx-font-size: 18px;" />
+
+    <TextArea fx:id="textArea" prefHeight="200" prefWidth="550" editable="false" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Aggiungi Squadra" onAction="#aggiungiSquadra" />
+        <Button text="Mostra Squadre" onAction="#mostraSquadre" />
+        <Button text="Aggiorna Punti Squadra" onAction="#aggiornaPuntiSquadra" />
+    </HBox>
+</VBox>
